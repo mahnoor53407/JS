@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chai or code |DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addlanguage(languagename) {
+      const li = document.createElement("li");
+      li.innerHTML = `${languagename}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addlanguage("python");
+    addlanguage("typescript");
+
+    function addoptilanguage(languagename) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(languagename));
+      document.querySelector(".language").appendChild(li);
+      
+    }
+    addoptilanguage("golang");
+  </script>
+</html>
